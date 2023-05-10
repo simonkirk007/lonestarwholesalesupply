@@ -1,3 +1,8 @@
+*:focus-visible {
+    outline: 0.1rem solid #000;
+    outline-offset: unset;
+    box-shadow: unset;
+}
 .lug{
     visibility: hidden;
 }
@@ -723,3 +728,5 @@ input[type="submit"] {
 .search-bar .field::after {
     display: none;
 }
+
+
