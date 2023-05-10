@@ -734,3 +734,29 @@ input[type="submit"] {
 }
 
 
+
+
+.newsletter-form__field-wrapper input {
+    padding: 0 !important;
+    margin: 0;
+    font-size: 16px;
+    padding-right: 110px !important;
+    padding-left: 15px !important;
+}
+
+.newsletter-form__field-wrapper input:focus {
+    padding-right: 110px !important;
+    padding-left: 15px !important;
+    margin: 0;
+    box-shadow: unset;
+}
+
+.newsletter-form__field-wrapper input::placeholder {
+    opacity: 1;
+}
+
+.newsletter-form__field-wrapper .newsletter-form__button {
+    background: var(--c1) !important;
+    color: #fff;
+    width: 110px;
+}
