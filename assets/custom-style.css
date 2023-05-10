@@ -729,4 +729,8 @@ input[type="submit"] {
     display: none;
 }
 
+.main-hdr-icon {
+    gap: 20px;
+}
+
 
