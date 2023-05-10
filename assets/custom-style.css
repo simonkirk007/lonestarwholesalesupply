@@ -698,4 +698,5 @@ input[type="submit"] {
     padding: 0 15px;
     font-size: 14px;
     border: unset !important;
+    background-color: #eaeaea;
 }
