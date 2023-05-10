@@ -115,7 +115,7 @@
                 <div class="col-12 col-lg-2 col-md-6 top-half-col">
                     <div class="header-top-left">
                         <div class="logo">
-                            <a href="/">
+                            <a href="{{ routes.root_url }}">
                               {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                               {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                               {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
@@ -141,7 +141,14 @@
                 <div class="col-12 col-lg-8 col-md-0 d-md-none d-lg-block">
                     <div class="header-info">
                     
-                    <?php dynamic_sidebar( 'pro_cat' ); ?>
+                          <form>
+                            <select id="category" name="category">
+                                <option value="all">Browse All Categories</option>
+                                <option value="Option1">Option 1</option>
+                                <option value="Option2">Option 2</option>
+                                <option value="Option3">Option 3</option>
+                            </select>
+                        </form>
                         
                         
                           <div class="nav-menu">
@@ -161,12 +168,11 @@
                     <div class="header-details">
                         <ul>
                             <li><i class="fa fa-headphones" aria-hidden="true"></i>
-                                <div class=""><a href="tel:<?php echo $phone ?>"><?php echo $phone ?></a>
+                                <div class=""><a href="tel:{{ section.settings.phone_number | escape }}">{{ section.settings.phone_number | escape }}</a>
                                     <br>
-                                    
                                 </div>
                             </li>
-                            <h6><?php echo $timings ?></h6>
+                            <h6>24/7 support</h6>
                         </ul>
                     </div>
                 </div>
@@ -231,10 +237,18 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="main-hdr-icon">
-                    
-
-                    </div>
+                  <div class="main-hdr-icon">
+                      <a href="#"><i class="far fa-heart px-md-3"></i>Wishlist</a>
+                      <a href="{{ routes.cart_url }}">
+                        <i class="far fa-shopping-bag  px-md-3">
+                          {%- if cart.item_count < 100 -%}
+                            <span>{{ cart.item_count }}</span>
+                          {%- else -%}
+                            <span>0</span>
+                          {%- endif -%}
+                        </i>Cart</a>
+                      <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"><i class="far fa-user  px-md-3"></i>Account</a>
+                  </div>
                 </div>
             </div>
         </div>
