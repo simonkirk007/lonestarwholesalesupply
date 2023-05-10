@@ -763,16 +763,16 @@ input[type="submit"] {
 
 
 .footersocial-icon .icon {
-    height: 20px;
-    width: 20px;
+    height: 20px !important;
+    width: 20px !important;
   }
-  
-.footersocial-icon a.list-social__item .icon {
-    width: 18px;
-    height: 18px;
+
+.footersocial-icon .list-social__item .icon {
+    width: 18px !important;
+    height: 18px !important;
     color: #fff !important;
 }
 
-.footersocial-icon a.list-social__link {
-    padding: 5px 6px;
+.footersocial-icon .list-social__link {
+    padding: 5px 6px !important;
 }
