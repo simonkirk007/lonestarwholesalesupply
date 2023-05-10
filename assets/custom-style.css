@@ -690,3 +690,12 @@ input[type="submit"] {
     border-radius: 0px;
     border: 1px solid var(--c1);
 }
+
+
+.search-bar input#Search-In-Modal-1 {
+    height: 40px;
+    min-height: 40px !important;
+    padding: 0 15px;
+    font-size: 14px;
+    border: unset !important;
+}
