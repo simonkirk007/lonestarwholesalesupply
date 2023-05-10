@@ -1,12 +1,6 @@
-{% comment %}theme-check-disable UndefinedObject{% endcomment %}
 {{ 'section-footer.css' | asset_url | stylesheet_tag }}
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
-{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
-{%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
-  {{ 'component-localization-form.css' | asset_url | stylesheet_tag }}
-{%- endif -%}
 
 
 
@@ -45,12 +39,28 @@
             </div>
             <div class="col-12 col-lg-2 col-md-4">
             
-            <?php dynamic_sidebar( 'footer-one' ); ?>
+            <div class="footer__nav">
+              <h6 class="title"> {{ section.settings.menu_title }} </h6>
+              <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+              </ul>
+            </div>
 
             </div>
             <div class="col-12 col-lg-2 col-md-4">
 
-            <?php dynamic_sidebar( 'footer-two' ); ?>
+            <div class="footer__nav">
+              <h6 class="title"> {{ section.settings.menu_title_2 }} </h6>
+              <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+              </ul>
+            </div>
             
             </div>
             <div class="col-12 col-lg-4">
