@@ -706,17 +706,20 @@ input[type="submit"] {
     opacity: 1 !important;
 }
 
-button.search__button.field__button {
+button.reset__button.field__button {
+    display: none;
+}
+.search-bar button.search__button.field__button {
     height: 40px;
     background-color: var(--c1) !important;
     top: 0;
     right: 0;
 }
 
-button.search__button.field__button svg {
+.search-bar button.search__button.field__button svg {
     color: #fff !important;
 }
 
-.field::after {
+.search-bar .field::after {
     display: none;
 }
