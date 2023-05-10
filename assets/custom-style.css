@@ -700,3 +700,7 @@ input[type="submit"] {
     border: unset !important;
     background-color: #eaeaea;
 }
+
+.search-bar input#Search-In-Modal-1::placeholder{
+    opacity: 1;
+}
