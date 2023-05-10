@@ -706,7 +706,7 @@ input[type="submit"] {
     opacity: 1 !important;
 }
 
-button.reset__button.field__button {
+.search-bar  button.reset__button.field__button {
     display: none;
 }
 .search-bar button.search__button.field__button {
