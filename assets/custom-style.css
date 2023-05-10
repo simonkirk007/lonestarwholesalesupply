@@ -694,13 +694,27 @@ input[type="submit"] {
 
 .search-bar input#Search-In-Modal-1 {
     height: 40px;
-    min-height: 40px !important;
+    min-height: 40px!important;
     padding: 0 15px;
     font-size: 14px;
     border: unset !important;
     background-color: #eaeaea;
+    margin: 0;
 }
 
-.search-bar input#Search-In-Modal-1::placeholder{
-    opacity: 1;
+.search-bar input#Search-In-Modal-1::placeholder {
+    opacity: 1 !important;
+}
+
+button.search__button.field__button {
+    height: 40px;
+    background-color: var(--c1) !important;
+}
+
+button.search__button.field__button svg {
+    color: #fff !important;
+}
+
+.field::after {
+    display: none;
 }
