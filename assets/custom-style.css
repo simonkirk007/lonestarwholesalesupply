@@ -709,6 +709,8 @@ input[type="submit"] {
 button.search__button.field__button {
     height: 40px;
     background-color: var(--c1) !important;
+    top: 0;
+    right: 0;
 }
 
 button.search__button.field__button svg {
