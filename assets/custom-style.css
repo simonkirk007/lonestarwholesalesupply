@@ -760,3 +760,19 @@ input[type="submit"] {
     color: #fff;
     width: 110px;
 }
+
+
+.footersocial-icon .icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+.footersocial-icon a.list-social__item .icon {
+    width: 18px;
+    height: 18px;
+    color: #fff !important;
+}
+
+.footersocial-icon a.list-social__link {
+    padding: 5px 6px;
+}
