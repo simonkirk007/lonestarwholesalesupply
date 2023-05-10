@@ -256,10 +256,24 @@
     "class": "announcement-bar-section",
     "settings": [
       {
-        "type": "link_list",
-        "id": "menu",
-        "default": "main-menu",
-        "label": "t:sections.header.settings.menu.label"
+      "type": "link_list",
+      "id": "menu",
+      "label": "t:sections.header.settings.menu.label",
+      "info": "Add your menu links here",
+      "default": [
+          {
+            "type": "collection_link",
+            "id": "main-menu",
+            "collection": "main-menu",
+            "label": "Main Menu"
+          },
+          {
+            "type": "collection_link",
+            "id": "category-menu",
+            "collection": "category-menu",
+            "label": "Category Menu"
+          }
+        ]
       },
       {
         "type": "link_list",
