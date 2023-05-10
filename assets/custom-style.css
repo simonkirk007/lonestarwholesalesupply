@@ -1,3 +1,6 @@
+.lug{
+    visibility: hidden;
+}
 .menu-main-menu-container ul {
     display: flex;
     gap: 30px;
