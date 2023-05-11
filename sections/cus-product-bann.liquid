@@ -10,7 +10,7 @@
                     </div>
                     <div class="box-content">
                         <h3>{{ block.settings.title | escape }}</h3>
-                        <a class="btn-1" href="{{ block.settings.link_url }}">{{ block.settings.link_title }}</a>
+                        <a class="{% if forloop.index == 2 %}btn-4{% else %}btn-1{% endif %}" href="{{ block.settings.link_url }}">{{ block.settings.link_title }}</a>
                     </div>
                 </div>
             </div>
