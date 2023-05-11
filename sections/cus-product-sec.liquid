@@ -8,7 +8,7 @@
                                 <h3>{{ section.settings.left_title }}</h3>
 
                                 {% assign selected_collection = section.settings.collection_side %}
-                                {% for product in collections[selected_collection].products limit: 4 %}
+                                {% for product in collections[selected_collection].products limit: 3 %}
                                     <div class="product-box">
                                         <div class="rel-prod-image">
                                             <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
