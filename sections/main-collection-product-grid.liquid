@@ -97,13 +97,14 @@
       </facet-filters-form>
     {%- endif -%}
 
-    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
+    <div class="{% if section.settings.filter_type == 'vertical' %} facets-vertical container{% endif %}">
+    <div class="row">
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <aside
           aria-labelledby="verticalTitle"
-          class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+          class="facets-wrapper col-lg-3 col-md-6 col-sm-12 col-12"
           id="main-collection-filters"
           data-id="{{ section.id }}"
         >
@@ -117,7 +118,7 @@
         </aside>
       {%- endif -%}
 
-      <div class="product-grid-container" id="ProductGridContainer">
+      <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -164,6 +165,7 @@
           </div>
         {%- endif -%}
       </div>
+    </div>
     </div>
   {%- endpaginate -%}
 </div>
