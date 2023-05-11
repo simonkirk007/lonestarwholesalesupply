@@ -33,13 +33,13 @@
                         </div>
             </div>
 
-                    {% if section.settings.product %}
+                    {% if section.settings.product_single %}
                     <div class="shop-box">
                         <div class="shop-box-item">
-                            <img src="{{ section.settings.product.featured_image.src | img_url: 'large' }}" alt="">
+                            <img src="{{ section.settings.product_single.featured_image.src | img_url: 'large' }}" alt="">
                         </div>
                         <div class="shop-box-content">
-                            <h3>{{ section.settings.product.title }}</h3>
+                            <h3>{{ section.settings.product_single.title }}</h3>
                             <div class="rating">
                                 <ul>
                                     <li><i class="fas fa-star"></i></li>
@@ -50,16 +50,16 @@
                                     <li><span>(4.0)</span></li>
                                 </ul>
                             </div>
-                            {% if section.settings.product.compare_at_price > section.settings.product.price %}
-                                <h4 class="price--regular">{{ section.settings.product.compare_at_price | money }}</h4>
-                                <h5 class="price--sale">{{ section.settings.product.price | money }}</h5>
+                            {% if section.settings.product_single.compare_at_price > section.settings.product_single.price %}
+                                <h4 class="price--regular">{{ section.settings.product_single.compare_at_price | money }}</h4>
+                                <h5 class="price--sale">{{ section.settings.product_single.price | money }}</h5>
                             {% else %}
-                                <h4 class="price">{{ section.settings.product.price | money }}</h4>
+                                <h4 class="price">{{ section.settings.product_single.price | money }}</h4>
                             {% endif %}
 
                     
                             <div class="shop-cont-btn">
-                                <a class="btn-1" href="{{ section.settings.product.url }}">Shop Now</a>
+                                <a class="btn-1" href="{{ section.settings.product_single.url }}">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -158,7 +158,7 @@
         },
         {
             "type": "product",
-            "id": "product",
+            "id": "product_single",
             "label": "Select a Product"
         },
     ],
