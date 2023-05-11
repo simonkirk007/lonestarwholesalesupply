@@ -2,7 +2,35 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-5 col-sm-12">
-            <?php get_sidebar('product');?>
+                <div class="filter-box">
+                        <div class="filter">
+                            <div class="related-products">
+                                <h3>{{ section.settings.left_title }}</h3>
+
+                                {% assign selected_collection = section.settings.collection_side %}
+                                {% for product in collections[selected_collection].products limit: 4 %}
+                                    <div class="product-box">
+                                        <div class="rel-prod-image">
+                                            <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
+                                        </div>
+                                        <div class="rel-prod-con">
+                                            <h4>{{ product.title }}</h4>
+                                            <p class="price">{{ product.price | money }}</p>
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                
+                            </div>
+                        </div>
             </div>
             <div class="col-lg-9 col-md-7 col-sm-12">
                 <div class="shop-products">
@@ -79,6 +107,17 @@
         {
             "type": "collection",
             "id": "collection",
+            "label": "t:sections.featured-collection.settings.collection.label"
+        },
+        {
+            "type": "text",
+            "id": "left_title",
+            "default": "NEW PRODUCTS",
+            "label": "Title"
+        },
+        {
+            "type": "collection",
+            "id": "collection_side",
             "label": "t:sections.featured-collection.settings.collection.label"
         }
     ],
