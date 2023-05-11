@@ -784,3 +784,6 @@ input[type="submit"] {
 .product-con h5.price--sale {
     text-decoration: line-through !important;
 }
+.deal-item img {
+    background-color: #fff;
+}
