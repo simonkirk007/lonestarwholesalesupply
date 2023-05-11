@@ -155,6 +155,24 @@
       ],
       "settings": {
       }
+    },
+    "643ed8c4-7273-4091-a1c0-f6ac30d41159": {
+      "type": "cus-reviews",
+      "blocks": {
+        "e4e217a0-07a2-4158-b1f7-3327b68865de": {
+          "type": "column",
+          "settings": {
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e4e217a0-07a2-4158-b1f7-3327b68865de"
+      ],
+      "settings": {
+        "title": "WHAT OUR CLIENT SAYS"
+      }
     }
   },
   "order": [
@@ -162,6 +180,7 @@
     "a8135f43-ab8c-4782-a33a-05aeac0a1882",
     "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda",
     "afc1f0b1-78cd-46f7-a689-74c9f21e78bb",
-    "66428bc5-b261-497a-ae00-0cba6a7c3729"
+    "66428bc5-b261-497a-ae00-0cba6a7c3729",
+    "643ed8c4-7273-4091-a1c0-f6ac30d41159"
   ]
 }
