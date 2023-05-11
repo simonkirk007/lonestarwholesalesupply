@@ -353,15 +353,6 @@
       ],
       "settings": {
       }
-    },
-    "1ef798b4-5b0f-4f25-9996-e140c9132cf7": {
-      "type": "cus-banner",
-      "settings": {
-        "sub_title": "<span>Welcome<\/span> To OUR WEBSITE",
-        "title": "<span>AUSTIN<\/span>WHOLESALE SUPPLY",
-        "button_text": "SHOP NOW",
-        "button_link": ""
-      }
     }
   },
   "order": [
@@ -372,7 +363,6 @@
     "66428bc5-b261-497a-ae00-0cba6a7c3729",
     "643ed8c4-7273-4091-a1c0-f6ac30d41159",
     "e3f06054-a353-4729-89d2-348ca9107b92",
-    "01726541-0f95-4deb-bbf0-4b249e02e918",
-    "1ef798b4-5b0f-4f25-9996-e140c9132cf7"
+    "01726541-0f95-4deb-bbf0-4b249e02e918"
   ]
 }
