@@ -26,11 +26,67 @@
         "title": "DEALS OF THE DAY",
         "collection": "frontpage"
       }
+    },
+    "afc1f0b1-78cd-46f7-a689-74c9f21e78bb": {
+      "type": "cus-category",
+      "blocks": {
+        "14d23edf-307e-4591-b7a2-8ee50f639ea6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-4.png",
+            "title": "WHIP-IT! TIN GIFT PACK",
+            "link": "#"
+          }
+        },
+        "fcb226bb-0e76-40b0-84f5-45e001c1d0eb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-5.png",
+            "title": "EROTICA WHIP 12X50",
+            "link": "#"
+          }
+        },
+        "b0d9ac0c-5bdf-4530-b320-46f12591ece6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-1.png",
+            "title": "RELAX AID 600MG 6CT BOX",
+            "link": "#"
+          }
+        },
+        "bfb69f1b-8591-46f1-b212-8d2efd5513ce": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-2.png",
+            "title": "RELAX AID 600MG 6CT BOX",
+            "link": "#"
+          }
+        },
+        "4bab3b30-ab01-43d9-9980-5105593fcea6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-3.png",
+            "title": "RAW BLACK ORGANIC KING SIZE SLIM PAPERS - 50CT",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "14d23edf-307e-4591-b7a2-8ee50f639ea6",
+        "fcb226bb-0e76-40b0-84f5-45e001c1d0eb",
+        "b0d9ac0c-5bdf-4530-b320-46f12591ece6",
+        "bfb69f1b-8591-46f1-b212-8d2efd5513ce",
+        "4bab3b30-ab01-43d9-9980-5105593fcea6"
+      ],
+      "settings": {
+        "title": "FEATURED CATEGORIES"
+      }
     }
   },
   "order": [
     "11cfb139-69f8-4cf9-a373-ea6d77cc7a06",
     "a8135f43-ab8c-4782-a33a-05aeac0a1882",
-    "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda"
+    "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda",
+    "afc1f0b1-78cd-46f7-a689-74c9f21e78bb"
   ]
 }
