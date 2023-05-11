@@ -799,3 +799,7 @@ input[type="submit"] {
 .rating  i.spr-icon {
     color: #f3cd03;
 }
+
+.price-tag {
+    padding-top: 0;
+}
