@@ -791,3 +791,11 @@ input[type="submit"] {
 .box-content h3 {
     color: #fff;
 }
+
+.rating span.spr-badge-caption {
+    display: none;
+}
+
+.rating  i.spr-icon {
+    color: #f3cd03;
+}
