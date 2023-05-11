@@ -1,0 +1,93 @@
+<section class="product-cat">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+            <?php get_sidebar('product');?>
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <div class="shop-products">
+                    <div class="products">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="shop-title">
+                                    <h4>{{ section.settings.title }}</h4>
+                                </div>
+                            </div>
+
+                            {% assign selected_collection = section.settings.collection %}
+                            {% for product in collections[selected_collection].products limit: 10 %}
+
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
+                                        </div>
+                                        <div class="product-con">
+                                            <h5>{% if product.type != blank %} {{ product.type }} {% else %} Product {% endif %}</h5>
+                                            <h3><a href="{{ product.url }}">{{ product.title }}</a></h3>
+                                            <div class="rating">
+                                                <ul>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><i class="fas fa-star"></i></li>
+                                                    <li><span>(5)</span></li>
+                                                </ul>
+                                            </div>
+
+                                            {% if product.compare_at_price > product.price %}
+                                                <h4 class="price--regular">{{ product.compare_at_price | money }}</h4>
+                                                <h5 class="price--sale">{{ product.price | money }}</h5>
+                                            {% else %}
+                                                <h5 class="price">{{ product.price | money }}</h5>
+                                            {% endif %}
+
+
+                                            <div class="pro-cont-btn">
+                                                <a class="btn-2" href="{{ product.url }}">Add</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+    {
+      "name": "Cus Product Sec",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "default": "Collections",
+        "label": "Title"
+        }, 
+        {
+            "type": "collection",
+            "id": "collection",
+            "label": "t:sections.featured-collection.settings.collection.label"
+        }
+    ],
+
+    "presets": [
+        {
+          "name": "Cus Product Sec"
+        }
+      ]
+    }
+
+{% endschema %}
