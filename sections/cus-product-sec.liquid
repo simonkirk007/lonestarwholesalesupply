@@ -35,7 +35,7 @@
                         <div class="shop-box-content">
                             <h3>{{ section.settings.product_single.title }}</h3>
                             <div class="rating">
-                                <div class="shopify-product-reviews-badge" data-id="{{ product.id }}"></div>
+                                <div class="shopify-product-reviews-badge" data-id="{{ section.settings.product_single.id }}"></div>
                             </div>
                             {% if section.settings.product_single.compare_at_price > section.settings.product_single.price %}
                                 <h4 class="price--regular">{{ section.settings.product_single.compare_at_price | money }}</h4>
