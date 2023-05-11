@@ -1,0 +1,61 @@
+<section class="icon-boxes">
+    <div class="container">
+        <div class="main-icon">
+            {%- for block in section.blocks -%}
+                <div class="icon-box">
+                    <div class="icon-box-item">
+                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                    </div>
+                    <div class="icon-box-content">
+                        <h3>{{ block.settings.title | escape }}</h3>
+                        <h6>{{ block.settings.sub_title | escape }}</h6>
+                    </div>
+                </div>
+            {% endfor %}
+            
+            
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+      "name": "Cus Icons Sec",
+      "tag": "section",
+      "class": "announcement-bar-section",
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+    
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Sub Title"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+
+        
+        ]
+      }
+    ],
+
+    "presets": [
+        {
+          "name": "Cus Icons Sec"
+        }
+      ]
+    }
+
+{% endschema %}
