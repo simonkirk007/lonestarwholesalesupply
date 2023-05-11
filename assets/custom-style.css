@@ -780,3 +780,7 @@ input[type="submit"] {
 .rel-prod-con p {
     font-size: 16px;
 }
+
+.product-con h5.price--sale {
+    text-decoration: line-through !important;
+}
