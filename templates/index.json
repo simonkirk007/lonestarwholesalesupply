@@ -9,9 +9,17 @@
         "button_text": "SHOP NOW",
         "button_link": "shopify:\/\/collections\/all"
       }
+    },
+    "a8135f43-ab8c-4782-a33a-05aeac0a1882": {
+      "type": "cus-product-sec",
+      "settings": {
+        "title": "Product Categories",
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
-    "11cfb139-69f8-4cf9-a373-ea6d77cc7a06"
+    "11cfb139-69f8-4cf9-a373-ea6d77cc7a06",
+    "a8135f43-ab8c-4782-a33a-05aeac0a1882"
   ]
 }
