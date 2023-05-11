@@ -162,13 +162,59 @@
         "e4e217a0-07a2-4158-b1f7-3327b68865de": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-2.png",
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        },
+        "297d8e10-1e38-439a-8957-7bcf3cef448c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-3.png",
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        },
+        "88969c50-5503-4012-9988-6c2a0e599990": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-1.png",
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        },
+        "ce9ea334-194c-46ee-8916-f9b1cf606cdf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-2.png",
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        },
+        "a82ba0af-3f9a-4585-b691-a2c4dfb00a4e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-3.png",
+            "title": "Herry Jones",
+            "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
+          }
+        },
+        "4e3e847d-1a25-4837-ad0b-b7aa453ce92a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/client-img-1.png",
             "title": "Herry Jones",
             "content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the<\/p>"
           }
         }
       },
       "block_order": [
-        "e4e217a0-07a2-4158-b1f7-3327b68865de"
+        "e4e217a0-07a2-4158-b1f7-3327b68865de",
+        "297d8e10-1e38-439a-8957-7bcf3cef448c",
+        "88969c50-5503-4012-9988-6c2a0e599990",
+        "ce9ea334-194c-46ee-8916-f9b1cf606cdf",
+        "a82ba0af-3f9a-4585-b691-a2c4dfb00a4e",
+        "4e3e847d-1a25-4837-ad0b-b7aa453ce92a"
       ],
       "settings": {
         "title": "WHAT OUR CLIENT SAYS"
