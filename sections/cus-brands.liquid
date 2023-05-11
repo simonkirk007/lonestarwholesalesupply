@@ -1,0 +1,56 @@
+<section class="brand">
+    <div class="container">
+        <div class="title text-center text-dark">
+            <h3>{{ section.settings.title }}</h3>
+        </div>
+        <div class="brand-slider">
+            {%- for block in section.blocks -%}
+            <div class="brand-item">
+                <div class="brand-img">
+                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+      "name": "Cus Brands",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "default": "BRANDS WE CARRY!",
+        "label": "Title"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "t:sections.multicolumn.blocks.column.name",
+    
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+        
+        ]
+      }
+    ],
+
+    "presets": [
+        {
+          "name": "Cus Brands"
+        }
+      ]
+    }
+
+{% endschema %}
