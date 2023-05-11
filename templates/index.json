@@ -126,12 +126,42 @@
       "settings": {
         "title": "FEATURED CATEGORIES"
       }
+    },
+    "66428bc5-b261-497a-ae00-0cba6a7c3729": {
+      "type": "cus-product-bann",
+      "blocks": {
+        "f1481d1d-4d25-4280-a491-dea2371910c4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/box-img-1.png",
+            "title": "LOOKAH FIREBEE 510 VARIABLE VOLTAGE BATTERY - 15CT",
+            "link_title": "Shop Now",
+            "link_url": "#"
+          }
+        },
+        "e36d33d0-8293-4a8a-911a-278dc49a40fa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/box-img-2.png",
+            "title": "RAW BLACK CREWNECK SWEATSHIRT",
+            "link_title": "Shop Now",
+            "link_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "f1481d1d-4d25-4280-a491-dea2371910c4",
+        "e36d33d0-8293-4a8a-911a-278dc49a40fa"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "11cfb139-69f8-4cf9-a373-ea6d77cc7a06",
     "a8135f43-ab8c-4782-a33a-05aeac0a1882",
     "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda",
-    "afc1f0b1-78cd-46f7-a689-74c9f21e78bb"
+    "afc1f0b1-78cd-46f7-a689-74c9f21e78bb",
+    "66428bc5-b261-497a-ae00-0cba6a7c3729"
   ]
 }
