@@ -299,6 +299,60 @@
       "settings": {
         "title": "BRANDS WE CARRY!"
       }
+    },
+    "01726541-0f95-4deb-bbf0-4b249e02e918": {
+      "type": "cus-icons-sec",
+      "blocks": {
+        "33c0969f-7ea8-45cd-8a06-6cf7b756f8cf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-img-1.png",
+            "sub_title": "Best Price & Offers",
+            "title": "Orders $50 or more"
+          }
+        },
+        "fcdc6116-ec0e-4932-a58d-7d268a8eb439": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-img-2.png",
+            "sub_title": "Delivery",
+            "title": "24\/7 amazing services"
+          }
+        },
+        "738048ad-5223-4911-b5dc-14799cc8db88": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-img-3.png",
+            "sub_title": "Great Daily Deal",
+            "title": "When you sign up"
+          }
+        },
+        "778dd44b-47ca-4132-a644-07bb2693aa5a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-img-4.png",
+            "sub_title": "Wide assortment",
+            "title": "Mega Discount"
+          }
+        },
+        "58099398-0439-45e1-b9a6-3c947f38a382": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icon-img-5.png",
+            "sub_title": "Easy Returns",
+            "title": "Within 30 days"
+          }
+        }
+      },
+      "block_order": [
+        "33c0969f-7ea8-45cd-8a06-6cf7b756f8cf",
+        "fcdc6116-ec0e-4932-a58d-7d268a8eb439",
+        "738048ad-5223-4911-b5dc-14799cc8db88",
+        "778dd44b-47ca-4132-a644-07bb2693aa5a",
+        "58099398-0439-45e1-b9a6-3c947f38a382"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -308,6 +362,7 @@
     "afc1f0b1-78cd-46f7-a689-74c9f21e78bb",
     "66428bc5-b261-497a-ae00-0cba6a7c3729",
     "643ed8c4-7273-4091-a1c0-f6ac30d41159",
-    "e3f06054-a353-4729-89d2-348ca9107b92"
+    "e3f06054-a353-4729-89d2-348ca9107b92",
+    "01726541-0f95-4deb-bbf0-4b249e02e918"
   ]
 }
