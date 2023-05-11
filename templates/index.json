@@ -14,7 +14,9 @@
       "type": "cus-product-sec",
       "settings": {
         "title": "Product Categories",
-        "collection": "frontpage"
+        "collection": "frontpage",
+        "left_title": "NEW PRODUCTS",
+        "collection_side": "frontpage"
       }
     }
   },
