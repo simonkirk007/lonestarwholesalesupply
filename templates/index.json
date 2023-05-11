@@ -19,10 +19,18 @@
         "collection_side": "frontpage",
         "product_single": "truweigh-mini-crimson-sil-bowl-scale-100gx0-01g-4"
       }
+    },
+    "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda": {
+      "type": "cus-product-deal",
+      "settings": {
+        "title": "DEALS OF THE DAY",
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
     "11cfb139-69f8-4cf9-a373-ea6d77cc7a06",
-    "a8135f43-ab8c-4782-a33a-05aeac0a1882"
+    "a8135f43-ab8c-4782-a33a-05aeac0a1882",
+    "59a9c76c-b0f8-490b-9f2b-bf8c851a4fda"
   ]
 }
