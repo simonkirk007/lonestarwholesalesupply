@@ -69,6 +69,46 @@
             "title": "RAW BLACK ORGANIC KING SIZE SLIM PAPERS - 50CT",
             "link": "#"
           }
+        },
+        "4fa90a85-4092-4ecb-b75a-437863debfa7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-4.png",
+            "title": "WHIP-IT! TIN GIFT PACK",
+            "link": "#"
+          }
+        },
+        "bce56816-56c9-47e0-930b-ea84e943fc07": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-5.png",
+            "title": "EROTICA WHIP 12X50",
+            "link": "#"
+          }
+        },
+        "b620e875-71ba-4a61-b014-e61faa36c6bb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-1.png",
+            "title": "RELAX AID 600MG 6CT BOX",
+            "link": "#"
+          }
+        },
+        "1e6d33a6-c406-4eae-a971-73d65a61c3e4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-2.png",
+            "title": "RELAX AID 600MG 6CT BOX",
+            "link": "#"
+          }
+        },
+        "763e885d-301e-4889-864f-396926338151": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fee-cat-3.png",
+            "title": "RAW BLACK ORGANIC KING SIZE SLIM PAPERS - 50CT",
+            "link": "#"
+          }
         }
       },
       "block_order": [
@@ -76,7 +116,12 @@
         "fcb226bb-0e76-40b0-84f5-45e001c1d0eb",
         "b0d9ac0c-5bdf-4530-b320-46f12591ece6",
         "bfb69f1b-8591-46f1-b212-8d2efd5513ce",
-        "4bab3b30-ab01-43d9-9980-5105593fcea6"
+        "4bab3b30-ab01-43d9-9980-5105593fcea6",
+        "4fa90a85-4092-4ecb-b75a-437863debfa7",
+        "bce56816-56c9-47e0-930b-ea84e943fc07",
+        "b620e875-71ba-4a61-b014-e61faa36c6bb",
+        "1e6d33a6-c406-4eae-a971-73d65a61c3e4",
+        "763e885d-301e-4889-864f-396926338151"
       ],
       "settings": {
         "title": "FEATURED CATEGORIES"
