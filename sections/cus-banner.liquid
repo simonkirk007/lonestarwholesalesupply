@@ -1,0 +1,59 @@
+<section class="main" style="background-image:url(<?php echo $image ?>)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-banner-content">
+                    <h3>{{ section.settings.sub_title | escape}}</h3>
+                    <h2>{{ section.settings.title }}</h2>
+                    <div class="banner-btns">
+                        <a class="btn-1" href="{{ section.settings.button_link }}">{{ section.settings.button_text}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+      "name": "Cus Banner",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "sub_title",
+          "default": "Welcome To OUR WEBSITE",
+          "label": "Sub Title"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "<span>AUSTIN</span>WHOLESALE SUPPLY",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "default": "SHOP NOW",
+          "label": "Button Text"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Cus Banner"
+        }
+      ]
+    }
+    {% endschema %}
