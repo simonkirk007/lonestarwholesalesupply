@@ -776,3 +776,7 @@ input[type="submit"] {
 .footersocial-icon .list-social__link {
     padding: 5px 6px !important;
 }
+
+.rel-prod-con p {
+    font-size: 16px;
+}
