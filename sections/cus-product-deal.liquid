@@ -1,16 +1,17 @@
 <section class="deal">
     <div class="container">
         <div class="title text-dark">
-            <h3><?php echo $deal_of_the_day_section['title']; ?></h3>
+            <h3> {{ section.settings.title | escape }} </h3>
         </div>
         <div class="row">
 
-
+        {% assign selected_collection = section.settings.collection %}
+        {% for product in collections[selected_collection].products limit: 4 %}
             <div class="col-12 col-lg-3 col-md-6">
                 <div class="deal-item">
-                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="">
+                    <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
                     <div class="deal-content">
-                        <h3><?php echo get_the_title() ?></h3>
+                        <h3>{{ product.title }}</h3>
                         <div class="rating">
                             <ul>
                                 <li><i class="fas fa-star"></i></li>
@@ -23,20 +24,26 @@
                         </div>
                         <div class="price-tag">
                             <div class="price">
-                            <h4><?php $product = wc_get_product( get_the_ID());  echo '$'.$product->get_sale_price();  ?></h4>
-                            <h6><?php $product = wc_get_product( get_the_ID());  echo '$'.$product->get_regular_price();  ?></h6>
+
+                            {% if product.compare_at_price > product.price %}
+                                <h4 class="price--regular">{{ product.compare_at_price | money }}</h4>
+                                <h6 class="price--sale">{{ product.price | money }}</h6>
+                            {% else %}
+                                <h4 class="price">{{ product.price | money }}</h4>
+                            {% endif %}
+                            
                             </div>
                             <div class="deal-btn">
-                                <a class="btn-2" href="<?php echo get_the_permalink(); ?>">Add</a>
+                                <a class="btn-2" href="{{ product.url }}">Add</a>
                             </div>
                         </div>
 
                     </div>
                 </div>
             </div>
+            {% endfor %}
 
 
-            
         </div>
     </div>
 </section>
@@ -48,14 +55,15 @@
       "class": "announcement-bar-section",
       "settings": [ 
         {
+        "type": "text",
+        "id": "title",
+        "default": "DEALS OF THE DAY",
+        "label": "Title"
+        }, 
+        {
             "type": "collection",
             "id": "collection",
             "label": "t:sections.featured-collection.settings.collection.label"
-        },
-        {
-            "type": "collection",
-            "id": "collection_side",
-            "label": "Product Side"
         }
     ],
 
