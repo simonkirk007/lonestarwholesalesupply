@@ -808,3 +808,40 @@ input[type="submit"] {
     border: 1px solid #777;
     margin-bottom: 30px;
   }
+
+
+.facets__form-vertical {
+    width: auto;
+}
+
+
+.facets__header-vertical {
+    font-size: 16px;
+}
+
+.facets-vertical .facets__summary {
+    font-size: 19px;
+    padding-bottom: 0;
+}
+
+.facets-vertical .facets__price input, .facets-vertical .facets__price label {
+    font-size: 16px !important;
+    padding: 0 14px !important;
+    height: 35px;
+}
+
+.facets-vertical .facets__price label {
+    display: none;
+}
+
+.facets-vertical .facets__price input::placeholder {
+    opacity: 1;
+}
+
+.facets__item label.facet-checkbox {
+    font-size: 16px;
+}
+
+.facets__heading--vertical {
+    margin: 0;
+}
