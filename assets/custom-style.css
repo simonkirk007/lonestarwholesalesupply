@@ -940,7 +940,7 @@ input[type="submit"] {
 }
 
 .spr-container {
-    border-color: var(--c1);
+    border-color: var(--c1) !important;
 }
 
 .product .price--sold-out .price__badge-sold-out {
