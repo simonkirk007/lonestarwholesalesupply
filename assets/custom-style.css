@@ -845,3 +845,16 @@ input[type="submit"] {
 .facets__heading--vertical {
     margin: 0;
 }
+
+.facet-filters__label, .facet-filters__field .select__select, .product-count__text {
+    font-size: 16px;
+}
+
+.facet-filters__field .select__select:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+
+.facets-vertical-form {
+    margin-bottom: 20px;
+}
