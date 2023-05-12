@@ -6,13 +6,13 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="contact-img">
-                                <img src="assets/images/contact-img.png" alt="">
+                                <img src="{{ section.settings.image | img_url: 'master' }}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="row align-items-center">
                                 <div class="col-12">
-                                    <h2>Contact Information</h2>
+                                    <h2>{{ section.settings.title | escape }}</h2>
                                 </div>
                                 <div class="col-6">
                                   {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
@@ -111,9 +111,7 @@
                                       </label>
                                     </div>
                                     <div class="contact__button">
-                                      <button type="submit" class="button">
-                                        {{ 'templates.contact.form.send' | t }}
-                                      </button>
+                                      <button type="submit" class="button">Send Message</button>
                                     </div>
                                   {%- endform -%}
                                     <div class="form-item">
@@ -157,19 +155,19 @@
                                 <div class="col-12">
                                     <div class="contact-item ">
                                        
-                                        <h6> <i class="fas fa-phone-alt"></i> <a href="tel:5122847031">(512) 284-7031</a></h6>
+                                        <h6> <i class="fas fa-phone-alt"></i> <a href="{{ section.settings.phone_link }}">{{ section.settings.phone_number }}</a></h6>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="contact-item ">
                                        
-                                        <h6> <i class="fas fa-envelope"></i> <a href="mailto:lonestarwholesalesupply@gmail.com">lonestarwholesalesupply@gmail.com</a></h6>
+                                        <h6> <i class="fas fa-envelope"></i> <a href="{{ section.settings.email_link }}">{{ section.settings.email_address}}</a></h6>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="contact-item ">
                                         
-                                        <h6><i class="fas fa-map-marker-alt"></i> <a href="javascript:void(0)">14106 N Interstate 35 Frontage Rd A2, Austin, TX 78728</a></h6>
+                                        <h6><i class="fas fa-map-marker-alt"></i> <a href="{{ section.settings.address_link }}">{{ section.settings.address }}</a></h6>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +188,13 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
+    
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
       "type": "text",
       "id": "title",
       "default": "Contact Information",
