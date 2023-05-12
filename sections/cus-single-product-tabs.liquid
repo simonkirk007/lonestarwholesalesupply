@@ -2,19 +2,25 @@
     <div class="container">
         <div class="product-tabs-btns">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
+                {% if product.metafields.custom.description !=blank %}
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="DEscription-tab" data-bs-toggle="tab" data-bs-target="#DEscription"
                         type="button" role="tab" aria-controls="home" aria-selected="true">DEscription</button>
                 </li>
+                {% endif %}
+                {% if product.metafields.custom.specification !=blank %}
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="Specification-tab" data-bs-toggle="tab" data-bs-target="#Specification"
                         type="button" role="tab" aria-controls="profile" aria-selected="false">Specification</button>
                 </li>
+                {% endif %}
+                
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
                         type="button" role="tab" aria-controls="contact" aria-selected="false">Customer Reviews</button>
                 </li>
-            </ul>
+               
+              </ul>
         </div>
         <div class="product-tabs-con">
             <div class="tab-content" id="myTabContent">
