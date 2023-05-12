@@ -811,7 +811,7 @@ input[type="submit"] {
 
 
 .facets__form-vertical {
-    width: auto;
+    width: auto !important;
 }
 
 
@@ -847,7 +847,7 @@ input[type="submit"] {
 }
 
 .facet-filters__label, .facet-filters__field .select__select, .product-count__text {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .facet-filters__field .select__select:focus {
