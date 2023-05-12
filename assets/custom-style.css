@@ -961,3 +961,7 @@ span.active-facets__button-inner {    color: #fff;}
     background-color: transparent;
     color: var(--c1);
 }
+
+i.fas.fa-phone-alt {
+    font-family: "Font Awesome 5 Pro";
+}
