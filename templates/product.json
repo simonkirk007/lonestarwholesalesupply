@@ -86,6 +86,13 @@
         "padding_bottom": 12
       }
     },
+    "4884df3b-1b2b-4a68-aa53-355db3ea2912": {
+      "type": "cus-single-product-tabs",
+      "settings": {
+        "test_description": "Collections",
+        "test_additional": "Collections"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -107,6 +114,7 @@
   "order": [
     "a3a0d299-f197-46c7-80a5-101c41f1710a",
     "main",
+    "4884df3b-1b2b-4a68-aa53-355db3ea2912",
     "related-products"
   ]
 }
