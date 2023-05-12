@@ -803,3 +803,8 @@ input[type="submit"] {
 .price-tag {
     padding-top: 0;
 }
+
+.shop-products .product {
+    border: 1px solid #777;
+    margin-bottom: 30px;
+  }
