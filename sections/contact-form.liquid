@@ -41,7 +41,7 @@
                                       <div class="col-6">
                                         <div class="form-item">
                                           <input
-                                            class=""
+                                            class="field__input"
                                             autocomplete="name"
                                             type="text"
                                             id="ContactForm-name"
@@ -57,7 +57,7 @@
                                             autocomplete="email"
                                             type="email"
                                             id="ContactForm-email"
-                                            class=""
+                                            class="field__input"
                                             name="contact[email]"
                                             spellcheck="false"
                                             autocapitalize="off"
@@ -88,7 +88,7 @@
                                         <input
                                           type="tel"
                                           id="ContactForm-phone"
-                                          class=""
+                                          class="field__input"
                                           autocomplete="tel"
                                           name="contact[{{ 'templates.contact.form.phone' | t }}]"
                                           pattern="[0-9\-]*"
@@ -102,7 +102,7 @@
                                         <textarea
                                           rows="10"
                                           id="ContactForm-body"
-                                          class="text-area "
+                                          class="text-area field__input"
                                           name="contact[{{ 'templates.contact.form.comment' | t }}]"
                                           placeholder="{{ 'templates.contact.form.comment' | t }}"
                                         >
