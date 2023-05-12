@@ -1,5 +1,11 @@
 {
   "sections": {
+    "a3a0d299-f197-46c7-80a5-101c41f1710a": {
+      "type": "cus-inner-banner",
+      "settings": {
+        "title": "Product Detail"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -99,6 +105,7 @@
     }
   },
   "order": [
+    "a3a0d299-f197-46c7-80a5-101c41f1710a",
     "main",
     "related-products"
   ]
