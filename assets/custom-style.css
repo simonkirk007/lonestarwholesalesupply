@@ -944,8 +944,8 @@ input[type="submit"] {
 }
 
 .product .price--sold-out .price__badge-sold-out {
-    background-color: var(--c1);
-    color: #fff;
+    background-color: var(--c1) !important;
+    color: #fff !important;
 }
 
 .badge.price__badge-sale {background-color: #f3cd03;}
