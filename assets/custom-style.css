@@ -955,3 +955,9 @@ input[type="submit"] {
 span.active-facets__button-inner {    color: #fff;}
 
 .product-form__input.product-form__quantity {    margin-top: 15px !important;}
+
+.product-form__buttons .button:hover {
+    border-color: var(--c1) !important;
+    background-color: transparent;
+    color: var(--c1);
+}
