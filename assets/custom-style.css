@@ -918,3 +918,23 @@ input[type="submit"] {
 .product-form__input quantity-input.quantity .quantity__button svg {
     width: 0.7rem;
 }
+
+
+.button, .shopify-challenge__button, .customer button {
+    min-height: 45px;
+    min-width: auto !important;
+    width: auto;
+    font-size: 18px;
+    background-color: var(--c1);
+    transition: all 0.5s;
+    border: 1px solid #fff !important;
+    padding: 9px 16px;
+}
+
+.button::after {
+    display: none;
+}
+
+.product-form__buttons .button {
+    margin-top: 15px;
+}
