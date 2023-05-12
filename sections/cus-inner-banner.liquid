@@ -1,0 +1,35 @@
+<section class="breadcumb" style="background-image: url({% if section.settings.image !=blank %}{{ section.settings.image | img_url: 'master' }} {% else %}{{ 'pro-dea-bg.png' | asset_url }}{% endif %});">
+    <div class="container">
+        <div class="breadcumb-con">
+            <h2>{{ section.settings.title | escape }}</h2>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+    {
+      "name": "Cus Inner Banner",
+      "tag": "section",
+      "class": "announcement-bar-section",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Product Detail",
+          "label": "Title"
+        }
+       
+    ],
+    "presets": [
+        {
+          "name": "Cus Inner Banner"
+        }
+      ]
+    }
+    {% endschema %}
