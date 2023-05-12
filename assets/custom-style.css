@@ -859,3 +859,7 @@ input[type="submit"] {
 .facets-vertical-form {
     margin-bottom: 20px;
 }
+
+.facets-vertical > .row {
+    width: 100%;
+}
