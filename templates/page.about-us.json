@@ -3,10 +3,21 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "title": ""
+      }
+    },
+    "ce1d6a69-5507-45e4-a7ef-2c65e2d4a37a": {
+      "type": "cus-about-page",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-img.png",
+        "sub_title": "About Us",
+        "title": "Who we are",
+        "content": "<p>Welcome to Lonestar Wholesale Supply Austin, your local supplier of tobacco products, smokingaccessories, e-cigarettes, vaporizers, and other related items. As a trusted member of the Austin business community, we are proud to offer a wide range of high-quality products at competitive prices. We often work with manufacturers and distributors to procure the products they sell to retailers.<\/p><p>Our extensive product catalog features a wide range of high-quality products sourced from both domestic and international manufacturers. Whether you're looking for lighters, pipes, hookahs, vaporizers, CBD products, and many more we have you covered.<\/p><p>At Lonestar Wholesale Supply Austin, we are committed to providing exceptional customer service and support. We offer a range of services to our retail partners, including marketing and promotional support, product training, and other solutions.<\/p><p>Our team is dedicated to staying up to date with the latest industry trends and regulations, ensuring that our products are always compliant with relevant legal requirements. We work closely with our retail partners to provide the information and resources they need to succeed.<\/p>"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ce1d6a69-5507-45e4-a7ef-2c65e2d4a37a"
   ]
 }
