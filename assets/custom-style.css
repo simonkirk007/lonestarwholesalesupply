@@ -821,7 +821,8 @@ input[type="submit"] {
 
 .facets-vertical .facets__summary {
     font-size: 19px !important;
-    padding-bottom: 0 !important;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
 }
 
 .facets-vertical .facets__price input, .facets-vertical .facets__price label {
