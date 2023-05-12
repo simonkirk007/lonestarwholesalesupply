@@ -898,6 +898,7 @@ input[type="submit"] {
 .product-form__input {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .product-form__input label {
@@ -905,8 +906,7 @@ input[type="submit"] {
     margin-right: 15px;
 }
 
-.product-form__input 
- quantity-input.quantity {
+.product-form__input quantity-input.quantity {
     min-height: 35px !important;
 }
 
