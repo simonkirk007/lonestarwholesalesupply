@@ -838,8 +838,8 @@ input[type="submit"] {
     opacity: 1;
 }
 
-.facets__item label.facet-checkbox {
-    font-size: 16px;
+.active-facets__button-wrapper *, span.active-facets__button-inner, .facets__item label.facet-checkbox {
+    font-size: 16px !important;
 }
 
 .facets__heading--vertical {
