@@ -149,16 +149,45 @@
                                 <option value="Option3">Electronics</option>
                             </select>
                         </form>
-                        
-                        
-                          <div class="nav-menu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="about.php">about us</a></li>
-                                <li><a href="product.php">New Arrival</a></li>
-                                <li><a href="product.php">products</a></li>
-                                <li><a href="contact.php">Contact Us</a></li>
-                            </ul>
+                        <div class="nav-menu">
+                        {%- if section.settings.menu != blank -%}
+                            {%- if section.settings.menu_type_desktop == 'dropdown' -%}
+                              
+                                <ul>
+                                  {%- for link in section.settings.menu.links -%}
+                                    <li {% if link.url contains page.url %}class="active"{% endif %}>
+                                      <a class="" href="{{ link.url }}">{{ link.title | escape }} {% if link.links and link.links != blank %}
+                                      <i class="far fa-chevron-down"></i> {% endif %}</a>
+                                      {% if link.links and link.links != blank %}
+                                       
+                                        <ul class="sub-menu">
+                                          {% for sublink in link.links %}
+                                            <li  {% if sublink.url contains page.url %}class="active"{% endif %}>
+                                              <a href="{{ sublink.url }}">{{ sublink.title | escape }}</a>
+                                              {% if sublink.links and sublink.links != blank %}
+                                        
+                                                <ul class="sub-menu sub-sub-menu">
+                                                  {% for subsublink in sublink.links %}
+                                                    <li {% if subsublink.url contains page.url %}class="active"{% endif %}>
+                                                      <a href="{{ subsublink.url }}">{{ subsublink.title | escape }}</a>
+                                                    </li>
+                                                  {% endfor %}
+                                                </ul>
+                                              {% endif %}
+                                            </li>
+                                          {% endfor %}
+                                        </ul>
+                                      {% endif %}
+                                    </li>
+                                  {%- endfor -%}                            
+                                </ul>
+                              
+                            {%- endif -%}
+                          {%- endif -%}
+
+                          
+
+                           
                         </div>
                             
                         
