@@ -8,6 +8,17 @@
     },
     "ce1d6a69-5507-45e4-a7ef-2c65e2d4a37a": {
       "type": "cus-about-page",
+      "blocks": {
+        "5cb12091-5162-46ac-9138-80046e84dd76": {
+          "type": "column",
+          "settings": {
+            "content": "<p>Whether you're a small boutique or a large chain retailer, we have the products and expertise to help your business grow. Our goal is to build long-lasting relationships with our customers, and we pride ourselves on offering personalized service and support. Thank you for choosing Lonestar Wholesale Supply Austin as your partner in the Novelty and Smoke Shop Wholesale business. Contact us today to learn more about our products and services and how we can help you succeed.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5cb12091-5162-46ac-9138-80046e84dd76"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-img.png",
         "sub_title": "About Us",
