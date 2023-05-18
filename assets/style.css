@@ -3323,3 +3323,12 @@ predictive-search button.reset__button.field__button {
 .uwl-wishlist:hover .uwl-heart-btn-icon svg path {
   fill: var(--c1) !important;
 }
+
+.uwl-btn-wrap {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.uwl-btn-wrap .uwl-btn.uwl-wishlist {
+  margin: 0 !important;
+}
