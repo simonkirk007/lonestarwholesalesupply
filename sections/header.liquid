@@ -139,8 +139,8 @@
                       <li>
                         <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>    
                         <ul class="sub-menu">
-                          {%- if header_menu != blank -%}
-                          {% assign linklist = header_menu | linklist %}
+                          {%- if footer_menu != blank -%}
+                          {% assign linklist = footer_menu | linklist %}
                           {% if linklist.links.size > 0 %}
                             {% for link in linklist.links %}
                                 <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
@@ -310,7 +310,7 @@
       },
        {
         "type": "link_list",
-        "id": "header_menu",
+        "id": "footer_menu",
         "default": "main-menu",
         "label": "Menu 1"
       },
