@@ -3190,3 +3190,7 @@ color: var(--c1)!important;
 .facets-vertical .facets-wrapper {
   padding-right: 0 !important;
 }
+
+.predictive-search__loading-state {
+  display: none !important;
+}
