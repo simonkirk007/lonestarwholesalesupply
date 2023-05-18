@@ -34,7 +34,7 @@
               </div>
 
               {% if card_product.compare_at_price > card_product.price %}
-                  <h4 class="price--regularr">{{ card_product.price | money }}</h4>
+                  <h4 class="price--regular">{{ card_product.price | money }}</h4>
                   <h5 class="price--sale">{{ card_product.compare_at_price | money }}</h5>
               {% else %}
                   <h4 class="price">{{ card_product.price | money }}</h4>
