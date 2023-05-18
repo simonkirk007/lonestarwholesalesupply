@@ -3306,4 +3306,7 @@ predictive-search button.reset__button.field__button {
   border-radius: 10px;
   box-shadow: rgb(0 0 0 / 19%) 12px 13px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
   margin-bottom: 50px !important;
+  background-image: url('https://cdn.shopify.com/s/files/1/0764/9361/9510/files/login-img.png?v=1684410695');
+  background-size: 101%;
+  background-position: center;
 }
