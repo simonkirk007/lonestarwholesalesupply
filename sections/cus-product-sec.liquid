@@ -43,8 +43,8 @@
                                 <div class="shopify-product-reviews-badge" data-id="{{ section.settings.product_single.id }}"></div>
                             </div>
                             {% if section.settings.product_single.compare_at_price > section.settings.product_single.price %}
-                                <h4 class="price--regular">{{ section.settings.product_single.compare_at_price | money }}</h4>
-                                <h5 class="price--sale">{{ section.settings.product_single.price | money }}</h5>
+                                <h4 class="price--regular">{{ section.settings.product_single.price | money }}</h4>
+                                <h5 class="price--sale">{{ section.settings.product_single.compare_at_price | money }}</h5>
                             {% else %}
                                 <h4 class="price">{{ section.settings.product_single.price | money }}</h4>
                             {% endif %}
