@@ -193,6 +193,8 @@
             </aside>
           {%- endif -%}
         {%- endif -%}
+        <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
+          <div class="shop-products">
         <div class="product-grid-container" id="ProductGridContainer">
           {%- if search.results.size == 0 and search.filters != empty -%}
             <div class="template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="product-grid" data-id="{{ section.id }}">
@@ -205,8 +207,7 @@
               </div>
             </div>
           {%- else -%}
-          <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
-              <div class="shop-products">
+         
             <div class="template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="product-grid" data-id="{{ section.id }}">
               <div class="loading-overlay gradient"></div>
               <div id="product-grid" data-id="{{ section.id }}" class="product-grid row">
