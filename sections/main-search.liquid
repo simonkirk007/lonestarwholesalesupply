@@ -216,7 +216,6 @@
             <div class="template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="product-grid" data-id="{{ section.id }}">
               <div class="loading-overlay gradient"></div>
               <div id="product-grid" data-id="{{ section.id }}" class="product-grid row">
-                {%- if search.results =! blank -%}
                 {%- for item in search.results -%}
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
@@ -241,10 +240,7 @@
                     {%- endcase -%}
                 
                 {%- endfor -%}
-              {%- else -%}
-                <h2>No Product Found!!</h2>
-              {%- endif -%}
-              </div>
+              </ul>
               {%- if paginate.pages > 1 -%}
                 {% render 'pagination', paginate: paginate %}
               {%- endif -%}

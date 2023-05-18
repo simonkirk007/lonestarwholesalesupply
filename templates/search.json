@@ -1,5 +1,11 @@
 {
   "sections": {
+    "10ad719c-364c-4187-a591-96c3997eee20": {
+      "type": "cus-inner-banner",
+      "settings": {
+        "title": "Search Page"
+      }
+    },
     "main": {
       "type": "main-search",
       "settings": {
@@ -20,6 +26,7 @@
     }
   },
   "order": [
+    "10ad719c-364c-4187-a591-96c3997eee20",
     "main"
   ]
 }

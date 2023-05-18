@@ -1,1 +1,22 @@
-{"sections":{"main":{"type":"main-register","settings":{"padding_top":36,"padding_bottom":36}}},"order":["main"]}
+{
+  "sections": {
+    "b1ef163f-7e14-40c2-95b0-9ff850f8cab8": {
+      "type": "cus-inner-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-bg.png",
+        "title": "Register"
+      }
+    },
+    "main": {
+      "type": "main-register",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "b1ef163f-7e14-40c2-95b0-9ff850f8cab8",
+    "main"
+  ]
+}
