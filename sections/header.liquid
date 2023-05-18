@@ -150,9 +150,8 @@
                             <a href="javascript:void(0);">Select a category<i class="fas fa-caret-down"></i></a>
                             <ul class="sub-menu">
                              
-                                {% assign linklist = other_menu | linklist %}
-
-                                  {% for link in linklist.links %}123
+                                  {% assign linklist = other_menu | linklist %}
+                                  {% for link in linklist.links %}
                                     <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
                                   {% endfor %}
                             
