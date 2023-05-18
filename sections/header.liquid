@@ -151,11 +151,10 @@
                             <ul class="sub-menu">
                              
                                 {% assign linklist = other_menu | linklist %}
-                                {% if linklist.links.size > 0 %}
+                                
                                   {% for link in linklist.links %}
                                     <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
                                   {% endfor %}
-                                {% endif %}
                             
                             </ul>
                             
