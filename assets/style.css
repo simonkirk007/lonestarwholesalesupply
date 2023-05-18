@@ -3329,6 +3329,7 @@ predictive-search button.reset__button.field__button {
   align-items: center !important;
 }
 
-.uwl-btn-wrap .uwl-btn.uwl-wishlist {
+.uwl-btn-wrap .uwl-btn.uwl-wishlist, 
+.uwl-heart-btn-icon {
   margin: 0 !important;
 }
