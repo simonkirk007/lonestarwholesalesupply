@@ -3287,3 +3287,6 @@ predictive-search button.reset__button.field__button {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+.newsletter-form__message {
+  color: #fff !important;
+}
