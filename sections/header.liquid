@@ -138,16 +138,7 @@
                     <ul>
                       <li>
                         <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>    
-                        <ul class="sub-menu">
-                          {%- if footer_menu != blank -%}
-                          {% assign linklist = footer_menu | linklist %}
-                          {% if linklist.links.size > 0 %}
-                            {% for link in linklist.links %}
-                                <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
-                            {% endfor %}
-                          {% endif %}
-                        {%- endif -%}
-                        </ul>
+                        
                       </li>
                     </ul>
                     
@@ -157,6 +148,16 @@
                     <div class="header-info">
                           <div id="category" class="category-dropdown">
                             <a href="javascript:void(0);">Select a category<i class="fas fa-caret-down"></i></a>
+                            <ul class="sub-menu">
+                              {%- if footer_menu != blank -%}
+                                {% assign linklist = footer_menu | linklist %}
+                                {% if linklist.links.size > 0 %}
+                                  {% for link in linklist.links %}
+                                      <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                                  {% endfor %}
+                                {% endif %}
+                              {%- endif -%}
+                            </ul>
                           </div>
                           <form>
                             <select id="category" name="category">
