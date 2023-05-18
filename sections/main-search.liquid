@@ -185,7 +185,8 @@
           </form>
         </facet-filters-form>
       {%- endif -%}
-      <div{% if section.settings.filter_type == 'vertical' %} class="facets-vertical page-width"{% endif %}>
+      <div{% if section.settings.filter_type == 'vertical' %} class="facets-vertical container"{% endif %}>
+        <div class="row">
         {%- if search.filters != empty -%}
           {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
             <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-search-filters" data-id="{{ section.id }}">
@@ -193,6 +194,7 @@
             </aside>
           {%- endif -%}
         {%- endif -%}
+
         <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
           <div class="shop-products">
         <div class="product-grid-container" id="ProductGridContainer">
@@ -244,6 +246,7 @@
         </div>
         </div>
         </div>
+      </div>
       </div>
     {%- endif -%}
   </div>
