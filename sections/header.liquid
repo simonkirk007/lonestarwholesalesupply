@@ -163,11 +163,7 @@
                               {% endif %}
                             {%- endif -%}
 
-                            {% for collection in collections %}
-                              {% unless collection.handle contains 'frontpage' %}
-                                <option value="{{ collection.url }}">{{ collection.title }}</option>
-                              {% endunless %}
-                            {% endfor %}
+                          
                           </select>
 
 
