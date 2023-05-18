@@ -158,14 +158,16 @@
                             </ul>
                             
                           </div>
-                          <form>
-                            <select id="category" name="category">
-                              <option value="all">Select a category</option>
-                              {% for collection in collections %}
-                                <option value="{{ collection.handle }}">{{ collection.title }}</option>
-                              {% endfor %}
-                            </select>
-                          </form>
+                        
+                          <select id="category" name="category" onchange="location = this.value;">
+                            <option value="all">Select a category</option>
+                            {% for collection in collections %}
+                              {% unless collection.handle contains 'exclude_category' %}
+                                <option value="{{ collection.url }}">{{ collection.title }}</option>
+                              {% endunless %}
+                            {% endfor %}
+                          </select>
+                          
                             <form>
 
                             <select id="category" name="category">
