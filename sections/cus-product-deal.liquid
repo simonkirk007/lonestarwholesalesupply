@@ -19,8 +19,10 @@
                             <div class="price">
 
                             {% if product.compare_at_price > product.price %}
-                                <h4 class="price--regular">{{ product.compare_at_price | money }}</h4>
-                                <h6 class="price--sale">{{ product.price | money }}</h6>
+                              
+                                <h4 class="price--regular">{{ product.price | money }}</h4>
+                                <h6 class="price--sale">{{ product.compare_at_price | money }}</h6>
+                                
                             {% else %}
                                 <h4 class="price">{{ product.price | money }}</h4>
                             {% endif %}
