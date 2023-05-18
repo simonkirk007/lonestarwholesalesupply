@@ -139,11 +139,14 @@
                       <li>
                         <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>    
                         <ul class="sub-menu">
-                          {%- if section.settings.header_menu != blank -%}
-                            {%- for link in section.settings.header_menu.links -%}
+                          {%- if header_menu != blank -%}
+                          {% assign linklist = header_menu | linklist %}
+                          {% if linklist.links.size > 0 %}
+                            {% for link in linklist.links %}
                                 <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
                             {% endfor %}
-                          {%- endif -%}
+                          {% endif %}
+                        {%- endif -%}
                         </ul>
                       </li>
                     </ul>
