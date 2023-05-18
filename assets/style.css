@@ -3300,3 +3300,10 @@ predictive-search button.reset__button.field__button {
 .shop-products .product-con h3 a:hover {
   color: #000;
 }
+
+.customer {
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 19%) 12px 13px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+  margin-bottom: 50px !important;
+}
