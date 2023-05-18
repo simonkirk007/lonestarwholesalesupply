@@ -146,6 +146,31 @@
                 </div>
                 <div class="col-12 col-lg-8 col-md-0 d-md-none d-lg-block">
                     <div class="header-info">
+
+                          <select id="category" name="category" onchange="location = this.value;">
+                            <option value="all">Select a category</option>
+
+                            {%- assign header_menu = section.settings.header_menu -%}
+                            {%- if header_menu != blank -%}
+                              {% assign linklist = header_menu | linklist %}
+                              {% if linklist.links.size > 0 %}
+                                
+                                  {% for link in linklist.links %}
+                                   
+                                    <option value="{{ link.url }}">{{ link.title | escape }}</option>
+                                  {% endfor %}
+                                
+                              {% endif %}
+                            {%- endif -%}
+
+                            {% for collection in collections %}
+                              {% unless collection.handle contains 'frontpage' %}
+                                <option value="{{ collection.url }}">{{ collection.title }}</option>
+                              {% endunless %}
+                            {% endfor %}
+                          </select>
+
+
                           <select id="category" name="category" onchange="location = this.value;">
                             <option value="all">Select a category</option>
                             {% for collection in collections %}
@@ -299,6 +324,14 @@
         "type": "link_list",
         "id": "primary_menu",
         "label": "Primary Menu",
+        "info": "Select the links for the primary menu.",
+        "default": "main-menu"
+      },
+      
+      {
+        "type": "link_list",
+        "id": "header_menu",
+        "label": "Header Menu",
         "info": "Select the links for the primary menu.",
         "default": "main-menu"
       },
