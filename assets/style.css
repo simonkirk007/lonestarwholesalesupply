@@ -3188,5 +3188,5 @@ color: var(--c1)!important;
     display: block;
 }
 .facets-vertical .facets-wrapper {
-  padding-right: 0;
+  padding-right: 0 !important;
 }
