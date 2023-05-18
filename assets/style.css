@@ -3281,3 +3281,9 @@ predictive-search button.reset__button.field__button {
 .title-wrapper-with-link {
   margin: 0;
 }
+
+.totals__subtotal-value, .totals > h2, .tax-note {
+  font-size: 22px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
