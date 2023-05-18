@@ -135,12 +135,26 @@
                 </div>
                 <div class="col-12 col-lg-2 col-md-6 top-half-col menu-wrapper">
                 <div class="header-main__menu">
-                    <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>
+                    <ul>
+                      <li>
+                        <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>    
+                        <ul class="sub-menu">
+                          {%- if section.settings.footer_menu != blank -%}
+                            {%- for link in section.settings.footer_menu.links -%}
+                                <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+                            {% endfor %}
+                          {%- endif -%}
+                        </ul>
+                      </li>
+                    </ul>
+                    
                 </div>
                 </div>
                 <div class="col-12 col-lg-8 col-md-0 d-md-none d-lg-block">
                     <div class="header-info">
-                    
+                          <div id="category" class="category-dropdown">
+                            <a href="javascript:void(0);">Select a category<i class="fas fa-caret-down"></i></a>
+                          </div>
                           <form>
                             <select id="category" name="category">
                                 <option value="all">Select a category</option>
