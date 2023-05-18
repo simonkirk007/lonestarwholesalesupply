@@ -8,8 +8,8 @@
         "footer_logo": "shopify:\/\/shop_images\/f-logo.jpg",
         "menu_title": "QUICK LINKS",
         "footer_menu": "footer",
-        "footer_menu_2": "footer",
         "menu_title_2": "USEFUL LINKS",
+        "footer_menu_2": "footer-menu-2",
         "newsletter_title": "Newsletter",
         "newsletter_content": "<p>Subscribe Our Newsletter<\/p>",
         "copyright": "<p>2023 . All rights reserved<\/p>"
