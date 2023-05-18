@@ -166,7 +166,7 @@
                           
                           </select>
 
-
+                          {% comment %}
                           <select id="category" name="category" onchange="location = this.value;">
                             <option value="all">Select a category</option>
                             {% for collection in collections %}
@@ -174,7 +174,9 @@
                                 <option value="{{ collection.url }}">{{ collection.title }}</option>
                               {% endunless %}
                             {% endfor %}
-                          </select>
+                          </select>  
+                          {% endcomment %}
+                          
                           
                             
                         <div class="nav-menu">
