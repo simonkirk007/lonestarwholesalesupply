@@ -3249,3 +3249,36 @@ predictive-search button.reset__button.field__button {
 .customer a {
   font-size: 16px;
 }
+
+
+
+.cart-items td {
+  padding-top: 15px;
+}
+
+.cart__items {
+  padding-bottom: 15px;
+}
+
+.cart-item__name {
+  font-size: 16px;
+}
+
+
+
+.cart-item__quantity-wrapper .quantity {min-height: 40px !important;height: 40px;}
+
+.cart-item cart-remove-button {
+  margin-top: 0;
+}
+
+.cart-item cart-remove-button a {
+  background-color: #fff;
+  min-height: 40px;
+}
+
+.cart-item__price-wrapper .price {margin-top: 5px !important;font-size: 23px;}
+
+.title-wrapper-with-link {
+  margin: 0;
+}
