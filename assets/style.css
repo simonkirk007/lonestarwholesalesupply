@@ -3192,5 +3192,31 @@ color: var(--c1)!important;
 }
 
 .predictive-search__loading-state {
+    display: none !important;
+}
+
+.predictive-search__loading-state {
   display: none !important;
+}
+
+predictive-search .search__input.field__input {
+  height: 50px;
+  padding: 0 20px !important;
+  font-size: 16px;
+}
+
+predictive-search label.field__label {
+  display: none !important;
+}
+
+predictive-search .search__input.field__input::placeholder {
+  opacity: 1;
+}
+
+predictive-search button.search__button.field__button {
+  height: 50px;
+}
+
+predictive-search button.reset__button.field__button {
+  height: 50px;
 }
