@@ -3349,7 +3349,6 @@ div#page_app .uwl-wishlist-header-links {
 .btn.uwl-remove-wishlist, .btn.wish-atc, .btn.wish-sold {
   color: var(--c1) !important;
 }
-
 .btn.uwl-remove-wishlist:hover, .btn.wish-atc:hover, .btn.wish-sold:hover {
   color: #fff !important;
   background-color: var(--c1) !important;
