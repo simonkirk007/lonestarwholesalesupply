@@ -3294,3 +3294,9 @@ predictive-search button.reset__button.field__button {
 .feature-inner-item {
   text-align: center;
 }
+
+.shop-box-content h3 a:hover,
+.rel-prod-con h4 a:hover,
+.shop-products .product-con h3 a:hover {
+  color: #000;
+}
