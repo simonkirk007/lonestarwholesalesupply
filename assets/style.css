@@ -3310,3 +3310,8 @@ predictive-search button.reset__button.field__button {
   background-size: 101%;
   background-position: center;
 }
+
+
+.whishlist-wrapper button{
+  width: 30px;
+}
