@@ -3319,6 +3319,7 @@ predictive-search button.reset__button.field__button {
   color: var(--c1) !important;
   border-color: var(--c1) !important;
 }
-.uwl-wishlist.wishlist-selected .uwl-heart-btn-icon svg path {
+.uwl-wishlist.wishlist-selected .uwl-heart-btn-icon svg path,
+.uwl-wishlist:hover .uwl-heart-btn-icon svg path {
   fill: var(--c1) !important;
 }
