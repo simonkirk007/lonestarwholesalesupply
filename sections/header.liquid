@@ -139,8 +139,8 @@
                       <li>
                         <a href="javascript:viod(0)" onclick="openSideBar()"><i class="bx bx-menu"></i></a>    
                         <ul class="sub-menu">
-                          {%- if section.settings.footer_menu != blank -%}
-                            {%- for link in section.settings.footer_menu.links -%}
+                          {%- if section.settings.header_menu != blank -%}
+                            {%- for link in section.settings.header_menu.links -%}
                                 <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
                             {% endfor %}
                           {%- endif -%}
@@ -307,7 +307,7 @@
       },
        {
         "type": "link_list",
-        "id": "footer_menu",
+        "id": "header_menu",
         "default": "main-menu",
         "label": "Menu 1"
       },
