@@ -160,6 +160,15 @@
                           </div>
                           <form>
                             <select id="category" name="category">
+                              <option value="all">Select a category</option>
+                              {% for collection in collections %}
+                                <option value="{{ collection.handle }}">{{ collection.title }}</option>
+                              {% endfor %}
+                            </select>
+                          </form>
+                            <form>
+
+                            <select id="category" name="category">
                                 <option value="all">Select a category</option>
                                 <option value="Option1">100560|BANANA APPLE</option>
                                 <option value="Option2">Clothing</option>
