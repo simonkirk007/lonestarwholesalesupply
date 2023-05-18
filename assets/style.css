@@ -3334,3 +3334,6 @@ predictive-search button.reset__button.field__button {
   margin: 0 !important;
   text-align: center;
 }
+.btn.uwl-remove-wishlist, .btn.wish-atc, .btn.wish-sold {
+  color: var(--c1) !important;
+}
