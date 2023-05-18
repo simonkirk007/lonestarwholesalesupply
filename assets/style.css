@@ -3253,11 +3253,11 @@ predictive-search button.reset__button.field__button {
 
 
 .cart-items td {
-  padding-top: 15px;
+  padding-top: 15px !important;
 }
 
 .cart__items {
-  padding-bottom: 15px;
+  padding-bottom: 15px !important;
 }
 
 .cart-item__name {
@@ -3269,7 +3269,7 @@ predictive-search button.reset__button.field__button {
 .cart-item__quantity-wrapper .quantity {min-height: 40px !important;height: 40px;}
 
 .cart-item cart-remove-button {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .cart-item cart-remove-button a {
