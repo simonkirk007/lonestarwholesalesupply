@@ -302,7 +302,11 @@
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
 
-
+<script>
+  document.getElementById('category').addEventListener('change', function() {
+  var selectedCategory = this.value;
+  });
+</script>
 
 {% schema %}
   {
