@@ -286,7 +286,9 @@
                 </div>
                 <div class="col-md-5">
                   <div class="main-hdr-icon">
-                      <a href="#"><i class="far fa-heart px-md-3"></i>Wishlist</a>
+                      {% comment %} <span class="wishlist"></span> {% endcomment %} 
+                    
+                      <a href="/apps/wishlist"><i class="far fa-heart px-md-3"></i>Wishlist</a>
                       <a href="{{ routes.cart_url }}">
                         <i class="far fa-shopping-bag  px-md-3">
                           {%- if cart.item_count < 100 -%}

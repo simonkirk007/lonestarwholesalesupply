@@ -1,12 +1,13 @@
 {
-    "name": "Wishlist template",
-    "wrapper": "section#wishlist.wishlist",
-    "sections": {
-      "main": {
-        "type": "wishlist-template"
+  "wrapper": "section#wishlist.wishlist",
+  "sections": {
+    "main": {
+      "type": "wishlist-template",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

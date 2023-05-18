@@ -1,12 +1,13 @@
 {
-    "name": "Product card template",
-    "layout": false,
-    "sections": {
-      "main": {
-        "type": "product-card-template"
+  "layout": false,
+  "sections": {
+    "main": {
+      "type": "product-card-template",
+      "settings": {
       }
-    },
-    "order": [
-      "main"
-    ]
-  }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
