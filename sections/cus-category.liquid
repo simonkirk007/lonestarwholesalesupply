@@ -8,7 +8,9 @@
             {%- for block in section.blocks -%}
             <div class="feature-item">
                 <div class="feature-inner-item">
-                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                    <a href="{{ block.settings.link }}">
+                        <img src="{{ block.settings.image | img_url: 'master' }}" alt="">
+                    </a>
                 </div>
                 <div class="feature-content">
                     <h4><a href="{{ block.settings.link }}"> {{ block.settings.title }} </a></h4>
