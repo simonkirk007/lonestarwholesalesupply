@@ -1,1 +1,44 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{}}},"order":["cart-items","cart-footer"]}
+{
+  "sections": {
+    "56e252b4-f01b-4be7-a7c5-c8c0ee04ddcf": {
+      "type": "cus-inner-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/cart-bg.png",
+        "title": "Cart"
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "56e252b4-f01b-4be7-a7c5-c8c0ee04ddcf",
+    "cart-items",
+    "cart-footer"
+  ]
+}
