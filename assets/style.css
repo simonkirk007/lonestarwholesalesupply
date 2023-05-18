@@ -3290,3 +3290,7 @@ predictive-search button.reset__button.field__button {
 .newsletter-form__message {
   color: #fff !important;
 }
+
+.feature-inner-item {
+  text-align: center;
+}
