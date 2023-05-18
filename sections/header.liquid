@@ -149,8 +149,8 @@
                           <div id="category" class="category-dropdown">
                             <a href="javascript:void(0);">Select a category<i class="fas fa-caret-down"></i></a>
                             <ul class="sub-menu">
-                              {%- if header_menu != blank -%}
-                                {% assign linklist = header_menu | linklist %}
+                              {%- if other_menu != blank -%}
+                                {% assign linklist = other_menu | linklist %}
                                 {% if linklist.links.size > 0 %}
                                   {% for link in linklist.links %}
                                     <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
@@ -312,7 +312,7 @@
       },
       {
         "type": "link_list",
-        "id": "header_menu",
+        "id": "other_menu",
         "label": "Category Menu",
         "info": "Select the links for the primary menu.",
         "default": "main-menu"
