@@ -952,7 +952,7 @@ input[type="submit"] {
 
 .badge { border: unset;}
 
-span.active-facets__button-inner {    color: #fff;}
+span.active-facets__button-inner {    color: #fff !important;}
 
 .product-form__input.product-form__quantity {    margin-top: 15px !important;}
 
