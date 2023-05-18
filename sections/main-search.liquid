@@ -187,13 +187,16 @@
       {%- endif -%}
       <div{% if section.settings.filter_type == 'vertical' %} class="facets-vertical container"{% endif %}>
         <div class="row">
-        {%- if search.filters != empty -%}
-          {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-            <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-search-filters" data-id="{{ section.id }}">
-              {% render 'facets', results: search, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type, paginate: paginate %}
-            </aside>
-          {%- endif -%}
-        {%- endif -%}
+          <div class="col-md-3">
+
+            {%- if search.filters != empty -%}
+            {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+              <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-search-filters" data-id="{{ section.id }}">
+                {% render 'facets', results: search, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type, paginate: paginate %}
+                </aside>
+              {%- endif -%}
+            {%- endif -%}
+        </div>
 
         <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
           <div class="shop-products">
