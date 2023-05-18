@@ -3187,3 +3187,6 @@ color: var(--c1)!important;
 .sideBar .menu-main-menu-container ul {
     display: block;
 }
+.facets-vertical .facets-wrapper {
+  padding-right: 0;
+}
