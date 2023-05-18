@@ -162,21 +162,13 @@
                           <select id="category" name="category" onchange="location = this.value;">
                             <option value="all">Select a category</option>
                             {% for collection in collections %}
-                              {% unless collection.handle contains 'exclude_category' %}
+                              {% unless collection.handle contains 'frontpage' %}
                                 <option value="{{ collection.url }}">{{ collection.title }}</option>
                               {% endunless %}
                             {% endfor %}
                           </select>
                           
-                            <form>
-
-                            <select id="category" name="category">
-                                <option value="all">Select a category</option>
-                                <option value="Option1">100560|BANANA APPLE</option>
-                                <option value="Option2">Clothing</option>
-                                <option value="Option3">Electronics</option>
-                            </select>
-                        </form>
+                            
                         <div class="nav-menu">
                         {%- if section.settings.primary_menu != blank -%}
                            
