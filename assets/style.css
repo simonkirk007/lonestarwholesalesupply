@@ -3334,6 +3334,18 @@ predictive-search button.reset__button.field__button {
   margin: 0 !important;
   text-align: center;
 }
+.uwl-wishlist-container {
+  width: 1320px;
+}
+
+div#page_app {
+  margin-top: 50px;
+}
+
+div#page_app .uwl-wishlist-header-links {
+  display: none;
+}
+
 .btn.uwl-remove-wishlist, .btn.wish-atc, .btn.wish-sold {
   color: var(--c1) !important;
 }
