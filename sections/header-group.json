@@ -13,8 +13,8 @@
       "type": "header",
       "settings": {
         "primary_menu": "main-menu",
-        "other_menu": "category-menu",
-        "phone_number": "(512) 284-7031"
+        "phone_number": "(512) 284-7031",
+        "other_menu": "footer"
       }
     }
   },
