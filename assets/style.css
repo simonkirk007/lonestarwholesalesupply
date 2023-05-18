@@ -3335,15 +3335,15 @@ predictive-search button.reset__button.field__button {
   text-align: center;
 }
 .uwl-wishlist-container {
-  width: 1320px;
+  width: 1320px !important;
 }
 
 div#page_app {
-  margin-top: 50px;
+  margin-top: 50px !important;
 }
 
 div#page_app .uwl-wishlist-header-links {
-  display: none;
+  display: none !important;
 }
 
 .btn.uwl-remove-wishlist, .btn.wish-atc, .btn.wish-sold {
