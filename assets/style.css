@@ -3332,4 +3332,5 @@ predictive-search button.reset__button.field__button {
 .uwl-btn-wrap .uwl-btn.uwl-wishlist, 
 .uwl-heart-btn-icon {
   margin: 0 !important;
+  text-align: center;
 }
