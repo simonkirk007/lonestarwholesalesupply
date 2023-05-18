@@ -205,6 +205,8 @@
               </div>
             </div>
           {%- else -%}
+          <div class="col-lg-9 col-md-6 col-sm-12 col-12" id="ProductGridContainer">
+              <div class="shop-products">
             <div class="template-search__results collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="product-grid" data-id="{{ section.id }}">
               <div class="loading-overlay gradient"></div>
               <div id="product-grid" data-id="{{ section.id }}" class="product-grid row">
@@ -238,6 +240,8 @@
               {%- endif -%}
             </div>
           {%- endif -%}
+        </div>
+        </div>
         </div>
       </div>
     {%- endif -%}
