@@ -6,42 +6,37 @@
         <div class="row">
 
         {% assign selected_collection = section.settings.collection %}
-          {% for product in collections[selected_collection].products limit: 8 %}
-            <div class="col-lg-3 col-md-4 col-12">
-                <div class="blog-con pro-con">
-                    <div class="blog-img">
-                        <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
-                        <div class="pro-btn">
-                            <a class="btn btn-1" href="{{ product.url }}">Add to card</a>
+        {% for product in collections[selected_collection].products limit: 4 %}
+            <div class="col-12 col-lg-3 col-md-6">
+                <div class="deal-item">
+                    <img src="{{ product.featured_image.src | img_url: 'large' }}" alt="">
+                    <div class="deal-content">
+                        <h3>{{ product.title }}</h3>
+                        <div class="rating">
+                            <div class="shopify-product-reviews-badge" data-id="{{ product.id }}"></div>
                         </div>
-                    </div>
-                    <div class="blog-inner-item pro-inner-item">
-
-                        <h4><a href="{{ product.url }}"> {{ product.title }}</a></h4>
-                        <p>Lorem Ipsum is simply dummy text</p>
-                        <div class="price-ratting">
+                        <div class="price-tag">
                             <div class="price">
+
+                            {% if product.compare_at_price > product.price %}
                               
-                               <p>
-                               {% if product.compare_at_price > product.price %}
+                                <h4 class="price--regular">{{ product.price | money }}</h4>
+                                <h6 class="price--sale">{{ product.compare_at_price | money }}</h6>
                                 
-                                  <del>{{ product.compare_at_price | money }}</del>
-                                  {{ product.price | money }}
-                                
-                              {% else %}
-                                {{ product.price | money }}
-                              {% endif %}
-                              </p>
-                              
+                            {% else %}
+                                <h4 class="price">{{ product.price | money }}</h4>
+                            {% endif %}
+                            
                             </div>
-                            <div class="ratting">
-                                <p><i class="fas fa-star"></i> 0.5</p>
+                            <div class="deal-btn">
+                                <a class="btn-2" href="{{ product.url }}">Add</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-          {% endfor %}
+            {% endfor %}
 
 
         </div>
