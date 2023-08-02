@@ -1099,7 +1099,7 @@ section.contact-sec {
 }
 .pagination__list
 {
-  width: 100%;
+  width: 100% !important;
 }
 .cart-items :is(h4, h5) {
   font-size: 16px;
