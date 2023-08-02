@@ -1097,6 +1097,10 @@ section.contact-sec {
   font-size: 21px;
   border-radius: 8px;
 }
+.pagination__list
+{
+  width: 100%;
+}
 .cart-items :is(h4, h5) {
   font-size: 16px;
 }
